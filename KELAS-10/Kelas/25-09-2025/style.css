@@ -1,0 +1,24 @@
+#Rumah {
+    width: 80%;
+    margin: auto;
+}
+.Kompetensi {
+    color: red;
+    font-style: italic;
+    font-size: large;
+}
+.Pendidikan {
+    height: auto;
+}
+.Huruf {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+    font-weight: 500;
+}
+.Jarak {
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+.Warna {
+    background-color: yellow;
+}

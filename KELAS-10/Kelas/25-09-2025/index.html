@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar CSS</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .box {
+            background-color: red;
+            position: absolute;
+            top: 300px;
+        }
+        .tinggi {
+            height: 150px;
+        }
+        .lebar {
+            width: 100px;
+        }
+        .box-1 {
+            background-color: yellow;
+            position: absolute;
+            top: 100px;
+        }
+        .box-2 {
+            background-color: green;
+        }
+        .box-3 {
+            background-color: aqua;
+        }
+        .batas-atas {
+            margin-top: 30px;
+        }
+        .batas-bawah {
+            margin-bottom: 30px;
+        }
+        .batas-dalam {
+            margin: 30px;
+        }
+        .batas-dalam-atas {
+            padding-top: 30px;
+        }
+        .batas-dalam-bawah {
+            padding-bottom: 30px;
+        }
+        .batas-kiri {
+            margin-left: 30px;
+        }
+        .batas-kanan {
+            margin-right: 30px;
+        }
+        .batas-dalam-kiri {
+            padding-left: 30px;
+        }
+        .batas-dalam-kanan {
+            padding-right: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div id="Rumah">
+        <div class="Jarak" style="background-color: aqua; width: 80%;">
+            <h1>Identitas</h1>
+            <p>Nama : Revanno</p>
+            <p>Tanggal Lahir : 22 September 2009</p>
+            <p>Alamat : Bligo Candi, Sidoarjo</p>
+        </div>
+        <div class="Pendidikan Huruf" style="background-color: blue; width: 80%; font-size: medium;">
+            <h1>Riwayat Pendidikan</h1>
+            <ul>
+                <li>SD Negeri Larangan</li>
+                <li>SMP Negeri 1 Candi</li>
+                <li>SMK Negeri 2 Buduran</li>
+            </ul>
+        </div>
+        <div class="Kompetensi Huruf" style="background-color: aquamarine; width: 80%; font-size: medium;">
+            <h1>Kompetensi</h1>
+        </div>
+    </div>
+    <div class="box batas-dalam-atas batas-dalam-bawah batas-dalam-kiri batas-dalam-kanan">
+    <div class="box-1 tinggi lebar batas-bawah batas-dalam-bawah batas-dalam-kiri">box-1</div>
+    <div class="box-2 tinggi lebar batas-bawah batas-dalam-bawah batas-dalam-kiri">box-2</div>
+    <div class="box-3 tinggi lebar batas-bawah batas-dalam-bawah batas-dalam-kiri">box-3</div>
+    </div>
+</body>
+</html>
