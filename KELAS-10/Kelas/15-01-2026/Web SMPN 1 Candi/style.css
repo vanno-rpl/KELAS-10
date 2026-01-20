@@ -1,0 +1,27 @@
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    margin-right: 100px;
+}
+
+.header img {
+    width: 80px;
+    height: auto;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    font-family: 'Satoshi';
+    gap: 30px;
+}
+
+.body {
+    font-weight: 300;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 0.5px;
+    text-align: justify;
+}
