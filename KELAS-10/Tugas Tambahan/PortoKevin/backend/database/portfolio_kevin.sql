@@ -1,0 +1,10 @@
+PRAGMA foreign_keys=OFF;
+BEGIN TRANSACTION;
+CREATE TABLE IF NOT EXISTS "migrations" ("id" integer primary key autoincrement not null, "migration" varchar not null, "batch" integer not null);
+INSERT INTO migrations VALUES(1,'0001_01_01_000000_create_users_table',1);
+CREATE TABLE IF NOT EXISTS "users" ("id" integer primary key autoincrement not null, "name" varchar not null, "email" varchar not null, "email_verified_at" datetime, "password" varchar not null, "remember_token" varchar, "created_at" datetime, "updated_at" datetime);
+INSERT INTO users VALUES(1,'Kevin','kevin@example.com',NULL,'$2y$12$bIbQreXEQzjJSD8Mq3tVS.wdlnkcYIRDsZpZp0ZhVr8NUjMZ4SeXe','HIuVjuvehJPGNtdXEnuQKj0P6pQJeLeD5kvTsJSGzKvahia9wzHJlOmjtBcf','2026-05-27 14:36:09','2026-05-27 14:36:09');
+INSERT INTO sqlite_sequence VALUES('migrations',1);
+INSERT INTO sqlite_sequence VALUES('users',1);
+CREATE UNIQUE INDEX "users_email_unique" on "users" ("email");
+COMMIT;
